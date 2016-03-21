@@ -7,10 +7,30 @@
 <title>Insert title here</title>
 
 	<%@ taglib uri="http://java.sun.com/jsp/jstl/core"  prefix="c"%>
+	<%@ taglib uri= "http://www.springframework.org/tags/form" prefix= "form" %>
 	
 </head>
 <body>
+
+	<form:form method= "post" action= "first.htm">
 	
-	<c:out value= "${msg}"/>
+		<label>StudentId</label>
+		<form:input path="studentId"/>
+		
+		<label>StudentName</label>
+		<form:input path="studentName"/>
+		
+		<label>academicScore</label>
+		<form:input path="academicScore"/>
+		
+		<label>sportsScore</label>
+		<form:input path="sportsScore"/>
+		
+		<label>culturalScore</label>
+		<form:input path="culturalScore"/>
+		
+	<input type= "submit" value= "submit">
+	</form:form>
+
 </body>
 </html>
