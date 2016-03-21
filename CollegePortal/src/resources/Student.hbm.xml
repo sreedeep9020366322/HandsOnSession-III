@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
 "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
-<!-- Generated Mar 21, 2016 11:08:19 AM by Hibernate Tools 3.5.0.Final -->
+<!-- Generated Mar 21, 2016 4:38:37 PM by Hibernate Tools 3.5.0.Final -->
 <hibernate-mapping>
     <class name="com.training.entity.Student" table="STUDENT">
         <id name="studentId" type="long">
@@ -20,5 +20,8 @@
         <property name="culturalScore" type="double">
             <column name="CULTURALSCORE" />
         </property>
+        <many-to-one name="department" class="com.training.entity.Department" fetch="join">
+            <column name="DEPARTMENT" />
+        </many-to-one>
     </class>
 </hibernate-mapping>

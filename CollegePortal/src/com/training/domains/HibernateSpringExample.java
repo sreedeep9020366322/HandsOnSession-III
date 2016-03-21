@@ -26,7 +26,8 @@ public class HibernateSpringExample extends HibernateDaoSupport implements MyDAO
 
 	@Override
 	public List<Student> findAll() {
-		// TODO Auto-generated method stub
+
+		
 		return null;
 	}
 

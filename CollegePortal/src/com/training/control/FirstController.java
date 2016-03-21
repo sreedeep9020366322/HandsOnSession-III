@@ -1,6 +1,7 @@
 package com.training.control;
 
 
+import java.util.List;
 import java.util.logging.Logger;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,7 +18,7 @@ import com.training.domains.HibernateSpringExample;
 import com.training.entity.Student;
 
 @Controller
-@RequestMapping("/first.htm")
+@RequestMapping("*.htm")
 public class FirstController {
 
 	Logger log = Logger.getLogger(this.getClass().getName());
@@ -31,7 +32,7 @@ public class FirstController {
 	@Autowired
 	HibernateSpringExample dao;
 	
-	@RequestMapping(method=RequestMethod.GET)
+	@RequestMapping(name="/first.htm",method= RequestMethod.GET)
 	public ModelAndView init(){
 
 		log.info("=====================came======================");
@@ -42,7 +43,7 @@ public class FirstController {
 		return mdl;
 	}
 	
-	@RequestMapping(method= RequestMethod.POST)
+	@RequestMapping(name= "/first.htm",method= RequestMethod.POST)
 	public ModelAndView onSubmit(@ModelAttribute("student") Student student) {
 		
 		log.info("------------------------------came-----------------");
@@ -55,6 +56,19 @@ public class FirstController {
 		return mdl;
 		
 	}
+	
+	@RequestMapping(name="/second.htm")
+	public ModelAndView view(){
+
+		log.info("=====================came======================");
+		mdl.setViewName("ViewDetails");
+		
+		List<Student> studentList = dao.findAll();
+		mdl.addObject("studentList",studentList);
+		
+		return mdl;
+	}
+
 	
 	
 }

@@ -1,5 +1,6 @@
 package com.training.entity;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 @Component
@@ -11,17 +12,29 @@ public class Student {
 	private double sportsScore;
 	private double culturalScore;
 	
-	public Student() {
-		super();
-		// TODO Auto-generated constructor stub
-	}
-	public Student(long studentId, String studentName, double academicScore, double sportsScore, double culturalScore) {
+	@Autowired
+	private Department department;
+	
+	
+	public Student(long studentId, String studentName, double academicScore, double sportsScore, double culturalScore,
+			Department department) {
 		super();
 		this.studentId = studentId;
 		this.studentName = studentName;
 		this.academicScore = academicScore;
 		this.sportsScore = sportsScore;
 		this.culturalScore = culturalScore;
+		this.department = department;
+	}
+	public Department getDepartment() {
+		return department;
+	}
+	public void setDepartment(Department department) {
+		this.department = department;
+	}
+	public Student() {
+		super();
+		// TODO Auto-generated constructor stub
 	}
 	public long getStudentId() {
 		return studentId;
