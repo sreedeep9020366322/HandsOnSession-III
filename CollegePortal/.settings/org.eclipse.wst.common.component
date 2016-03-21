@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="CollegePortal">
+        <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
+        <dependent-module archiveName="spring-web-4.1.5.RELEASE.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/spring-framework-4.1.5.RELEASE-dist/spring-framework-4.1.5.RELEASE/libs/MVC/spring-web-4.1.5.RELEASE.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-webmvc-4.1.5.RELEASE.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/spring-framework-4.1.5.RELEASE-dist/spring-framework-4.1.5.RELEASE/libs/MVC/spring-webmvc-4.1.5.RELEASE.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="commons-logging-1.2.1.1.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/spring-framework-4.1.5.RELEASE-dist/spring-framework-4.1.5.RELEASE/libs/CORE/commons-logging-1.2.1.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-beans-4.1.5.RELEASE.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/spring-framework-4.1.5.RELEASE-dist/spring-framework-4.1.5.RELEASE/libs/CORE/spring-beans-4.1.5.RELEASE.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-expression-4.1.5.RELEASE.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/spring-framework-4.1.5.RELEASE-dist/spring-framework-4.1.5.RELEASE/libs/CORE/spring-expression-4.1.5.RELEASE.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-core-4.1.5.RELEASE.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/spring-framework-4.1.5.RELEASE-dist/spring-framework-4.1.5.RELEASE/libs/CORE/spring-core-4.1.5.RELEASE.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-context-4.1.5.RELEASE.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/spring-framework-4.1.5.RELEASE-dist/spring-framework-4.1.5.RELEASE/libs/CORE/spring-context-4.1.5.RELEASE.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-jdbc-4.1.5.RELEASE.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/spring-framework-4.1.5.RELEASE-dist/spring-framework-4.1.5.RELEASE/libs/JDBC/spring-jdbc-4.1.5.RELEASE.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-tx-4.1.5.RELEASE.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/spring-framework-4.1.5.RELEASE-dist/spring-framework-4.1.5.RELEASE/libs/JDBC/spring-tx-4.1.5.RELEASE.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-orm-4.1.5.RELEASE.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/spring-framework-4.1.5.RELEASE-dist/spring-framework-4.1.5.RELEASE/libs/JDBC/spring-orm-4.1.5.RELEASE.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-aop-4.1.5.RELEASE.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/spring-framework-4.1.5.RELEASE-dist/spring-framework-4.1.5.RELEASE/libs/JDBC/spring-aop-4.1.5.RELEASE.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="ehcache-1.5.0.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/D:/Java Batch/Hibernate/hibernate-distribution-3.6.10.Final/lib/requiredLib/ehcache-1.5.0.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="backport-util-concurrent.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/D:/Java Batch/Hibernate/hibernate-distribution-3.6.10.Final/lib/requiredLib/backport-util-concurrent.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="hibernate-testing.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/D:/Java Batch/Hibernate/hibernate-distribution-3.6.10.Final/lib/requiredLib/hibernate-testing.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="dom4j-1.6.1.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/D:/Java Batch/Hibernate/hibernate-distribution-3.6.10.Final/lib/requiredLib/dom4j-1.6.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jta-1.1.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/D:/Java Batch/Hibernate/hibernate-distribution-3.6.10.Final/lib/requiredLib/jta-1.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="slf4j-api-1.7.2.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/D:/Java Batch/Hibernate/hibernate-distribution-3.6.10.Final/lib/requiredLib/slf4j-api-1.7.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="commons-collections-3.1.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/D:/Java Batch/Hibernate/hibernate-distribution-3.6.10.Final/lib/requiredLib/commons-collections-3.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="slf4j-nop-1.7.2.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/D:/Java Batch/Hibernate/hibernate-distribution-3.6.10.Final/lib/requiredLib/slf4j-nop-1.7.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="hibernate-jpa-2.0-api-1.0.1.Final.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/D:/Java Batch/Hibernate/hibernate-distribution-3.6.10.Final/lib/requiredLib/hibernate-jpa-2.0-api-1.0.1.Final.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="hibernate3.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/D:/Java Batch/Hibernate/hibernate-distribution-3.6.10.Final/lib/requiredLib/hibernate3.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="cglib-2.2.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/D:/Java Batch/Hibernate/hibernate-distribution-3.6.10.Final/lib/requiredLib/cglib-2.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="antlr-2.7.6.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/D:/Java Batch/Hibernate/hibernate-distribution-3.6.10.Final/lib/requiredLib/antlr-2.7.6.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="javassist-3.12.0.GA.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/D:/Java Batch/Hibernate/hibernate-distribution-3.6.10.Final/lib/requiredLib/javassist-3.12.0.GA.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="c3p0-0.9.1.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/D:/Java Batch/Hibernate/hibernate-distribution-3.6.10.Final/lib/requiredLib/c3p0-0.9.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <property name="context-root" value="CollegePortal"/>
+        <property name="java-output-path" value="/CollegePortal/build/classes"/>
+    </wb-module>
+</project-modules>
