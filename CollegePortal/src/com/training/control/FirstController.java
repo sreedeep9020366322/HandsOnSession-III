@@ -14,7 +14,6 @@ import com.training.domains.HibernateSpringStudent;
 import com.training.entity.Student;
 
 @Controller
-@RequestMapping("first.htm")
 public class FirstController {
 
 	Logger log = Logger.getLogger(this.getClass().getName());
@@ -27,11 +26,13 @@ public class FirstController {
 	
 	@Autowired
 	HibernateSpringStudent dao;
-	
-	@RequestMapping(name="/first.htm",method= RequestMethod.GET)
+	@RequestMapping("/")
+	public String returnIndex(){
+		return "index";
+	}
+	@RequestMapping(value="/first",method= RequestMethod.GET)
 	public ModelAndView init(){
 
-		log.info("=====================came======================");
 		mdl.setViewName("AddDetails");
 		
 		mdl.addObject("command",student);
@@ -39,14 +40,11 @@ public class FirstController {
 		return mdl;
 	}
 	
-	@RequestMapping(name= "/first.htm",method= RequestMethod.POST)
+	@RequestMapping(value= "/first",method= RequestMethod.POST)
 	public ModelAndView onSubmit(@ModelAttribute("student") Student student) {
-		
-		log.info("------------------------------came-----------------");
 		
 		Long key = (Long)dao.add(student);
 		
-		log.info("=================="+key);
 		mdl.setViewName("Success");
 		
 		return mdl;

@@ -42,6 +42,12 @@ public class HibernateSpringStudent extends HibernateDaoSupport implements MyDAO
 		return false;
 	}
 
+	public List<Student> findList(Serializable obj) {
+
+		List<Student> studentList =  (List<Student>) getHibernateTemplate().find("from Student where department.departmentName = ?",obj);
+		return studentList;
+		
+	}
 	
 	
 
