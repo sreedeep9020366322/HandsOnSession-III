@@ -9,7 +9,7 @@ import com.training.entity.Student;
 import com.training.iface.MyDAO;
 
 
-public class HibernateSpringExample extends HibernateDaoSupport implements MyDAO<Student> {
+public class HibernateSpringStudent extends HibernateDaoSupport implements MyDAO<Student> {
 
 	@Override
 	public Serializable add(Student t) {
@@ -27,7 +27,6 @@ public class HibernateSpringExample extends HibernateDaoSupport implements MyDAO
 	@Override
 	public List<Student> findAll() {
 
-		
 		return null;
 	}
 

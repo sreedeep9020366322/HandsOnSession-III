@@ -26,7 +26,8 @@
 <mvc:annotation-driven/>
 <context:component-scan base-package="com.training"/>
 
-<bean id= "dao" class= "com.training.domains.HibernateSpringExample" p:hibernateTemplate-ref="template"></bean>
+<bean id= "dao" class= "com.training.domains.HibernateSpringStudent" p:hibernateTemplate-ref="template"></bean>
+<bean id= "daoDept" class= "com.training.domains.HibernateSpringDept" p:hibernateTemplate-ref="template"></bean>
 
 
 <bean id= "template" class= "org.springframework.orm.hibernate3.HibernateTemplate" 

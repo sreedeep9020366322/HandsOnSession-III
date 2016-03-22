@@ -29,6 +29,9 @@
 		<label>culturalScore</label>
 		<form:input path="culturalScore"/>
 		
+		<label>DepartmentName</label>
+		<form:input path="department.departmentName"/>
+		
 	<input type= "submit" value= "submit">
 	</form:form>
 
